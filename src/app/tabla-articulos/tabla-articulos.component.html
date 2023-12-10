@@ -1,0 +1,22 @@
+<table border="1">
+    <tr>
+        <th>Codigo</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+        <th>Borrar</th>
+        <th>Seleccionar</th>
+      </tr>
+      @for ( articulo of articulos; track $index) {
+        <tr>
+          <td>{{$index+1}}</td>
+          <td>{{articulo.descripcion}}</td>
+          <td>{{articulo.precio}}</td>
+          <td>
+            <button type="button" class="btn btn-success" (click)="eliminar($index+1)">Borrar?</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-dark" (click)="seleccionar($index+1)">Seleccionar</button>
+          </td>
+        </tr>
+      }
+</table>

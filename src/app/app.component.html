@@ -1,0 +1,12 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h1>Administracion de articulos</h1>
+<hr>
+<app-tabla-articulos #listaArticulos (onSeleccionar)="seleccionarArticulo($any($event))"></app-tabla-articulos>
+<hr>
+<app-input-tabla #formularioArticulo (onActualizar)="modificarArticulo($any($event))" (onAlmacenar)="agregarArticulo($any($event))"></app-input-tabla>

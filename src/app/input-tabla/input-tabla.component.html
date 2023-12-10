@@ -1,0 +1,17 @@
+<h1>Formulario</h1>
+
+<form [formGroup]="GrupoForm">
+    <div>
+        <p>Codigo: <input #formCode formControlName="codigo" type="number" name="codigo" id="codigo"></p><br>
+    </div>
+    <div>
+        <p>Descripcion: <input #formDescription formControlName="descripcion" type="text" name="descripcion" id="descripcion"></p><br>
+    </div>
+    <div>
+        <p>Precio: <input #formPrice formControlName="precio" type="number" name="precio" id="precio"></p><br>
+    </div>
+    <div>
+        <button type="button" class="secondary" (click)="enviar()">Agregar</button>
+        <button type="button" class="secondary" (click)="modificar()">Modificar</button>
+    </div>
+</form>
